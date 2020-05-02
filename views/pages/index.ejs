@@ -25,6 +25,12 @@
 
 <body>
 
+  <script>
+    function myFunction(val) {
+      console.log('Data'+val);
+    }
+    </script>
+
 <div class="jumbotron text-center">
   <div class="container">
     
@@ -33,7 +39,7 @@
     <p>You can purchase your health related machine from this website</p>
 
     <form>
-      <input type="text" name="search" placeholder="Search..">
+      <input type="text" name="search" placeholder="Search.." onchange="myFunction(this.value)">
     </form>
       </div>
 </div>
