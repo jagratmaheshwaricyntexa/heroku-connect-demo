@@ -2,7 +2,23 @@
 <html>
 <head>
   <% include ../partials/header.ejs %>
+  <style> 
+    input[type=text] {
+      width: 100%;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url('searchicon.png');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+    }
+    </style>
 </head>
+
+
 
 <body>
 
@@ -13,8 +29,10 @@
     <h1> Welcome to MedBack </h1>
     <p>You can purchase your health related machine from this website</p>
 
-    <input style="background-color: white; background-image: url('searchicon.png'); background-position: 10px 10px; background-repeat: no-repeat; padding-left: 40p" spellcheck="false" autocomplete="off" name="typeahead" type="text" />
-    </div>
+    <form>
+      <input type="text" name="search" placeholder="Search..">
+    </form>
+      </div>
 </div>
 <div class="container">
   <div class="alert alert-info text-center" role="alert">
